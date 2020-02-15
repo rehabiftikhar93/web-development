@@ -1,0 +1,124 @@
+print ('hello')
+string='hello'
+string2='hihi'
+string3=string+string2
+print (string3)
+#string slicing
+
+name='rehab is a nice girl'
+print (name[0:5])
+print (name[0])
+
+#string formatting
+print ('%(lang)s is fun'%{'lang':'python'})
+print('%(value)s %(value)s %(value)s' %{'value': 'rehab'})
+print ('%(value)s is fun!' %{'value': 'rehab'})
+print ('%(a)i+%(b)i+%(c)i=%(d)i' %{'a':1, 'b':2, 'c':3, 'd':4})
+'python is as simple as {0}, {1}, {2}'.format('a', 'b', 'c')
+#list
+#list is same as string except it has square brackets instead of quotes, simple na
+
+list=[1,2,2,3,4,5,56]
+print (list)
+list1= [1,'a', 2, 'b', 3, 'c']
+print (list1)
+#nested list 
+nestedlist= (list, list1)
+print(nestedlist)
+#extend list
+combolist=list+list1
+print(combolist)
+#sorting out list
+list8=[1,2,3,3,3,3,3]
+list8.sort()
+print (list8.sort())
+#nonelist
+sorted_list=list8.sort()
+print (sorted_list)
+#slicing
+print(list8[0:3])
+#tuples are similar to list instead these have round brackets instead of square brackets
+
+tuple= (1, 2, 'a', 'b')
+print (tuple[0])
+print ([1,2,3])
+#dictionary
+dictionary={'one':1, 'two':2, 'three':3, 'four':4}
+print (dictionary)
+#accessing value within dictionary
+print (dictionary['three'])
+#adding true and false statements
+#checking keys
+dictionary.keys()
+print (dictionary.keys())
+#ifelse
+x=10
+y=15
+if x==10 or y==20:
+	print ('hi there')
+list= [1,2,3,3,4,4]
+x=0
+if x not in list:
+	print ('rehab')
+a=10
+b=30
+if a!=11 and b not in list:
+	print ('hey')
+#none example
+emptylist=[]
+if emptylist==[]:
+	print ('r')
+emptytuple=()
+if emptytuple:
+	print('a')
+emptystring=''
+if emptystring=='':
+	print ('0')
+nothing='none'
+if not nothing:
+	print ('u')
+empty_string=''
+if empty_string=='':
+	print ('bye')
+#when nothing is printed
+_string='something'
+if _string=='':
+	print ('y')
+#loops
+#forloop
+range (5,10)
+for number in range (5):
+	print ('number')
+range (10,30)
+for number in range (2):
+	print ('number')
+print ('hello')
+range (5)
+for number in range (1):
+ print ('rehab')
+ for number in range (3):
+ 	print ('hi')
+for number in [1,2,3,4,5]:
+	print ('00')
+dictionary={'address':123, 'name':'rehab'}
+for key in dictionary:
+	print ('shutup')
+#forsorting
+keys=dictionary.keys()
+for key in keys:
+	print ('le')
+	#whileloop
+age=10
+while age<=10:
+	print ('rehab')
+	age=age+1
+#while example with break
+i=0
+while i<10:
+	print ('j')
+	if i==7:
+		break
+	i+=1
+print ('hello')
+
+

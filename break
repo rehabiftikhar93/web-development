@@ -1,0 +1,4 @@
+for var in 'python':
+ 	if var=='h':
+ 		break
+ 		print ('current letter :'), var

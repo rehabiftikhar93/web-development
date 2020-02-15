@@ -1,0 +1,35 @@
+h1{
+    text-align:center;
+}
+
+.art{
+    margin: auto;
+    text-align: center;
+}
+
+td{
+    background-color: purple;
+    height: 300px;
+    width:150px;
+    text-align: center;
+}
+
+#one{
+    background-color: #FFCB47;
+}
+
+#two{
+    background-color: #4A5043;
+}
+
+#three{
+    background-color: #565656;
+}
+
+#four{
+    background-color: blueviolet;
+}
+
+#five{
+    background-color: #243E36;
+}

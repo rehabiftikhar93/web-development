@@ -1,0 +1,35 @@
+body{
+    background-color:#03c2fc;
+}
+
+h1{
+    border:1px solid black;
+}
+
+h2{
+    color:purple;
+}
+
+input{
+    border:2px solid rgb(207, 12, 12);
+
+}
+
+div p{
+    background-color: #c2cf0c;
+}
+
+#textblock{
+    border:5px solid gray;
+    width:800px;
+    height:400;
+}
+
+li a{
+    color:red;
+}
+
+#itemone{
+    text-decoration:overline;
+    color:pink;
+}

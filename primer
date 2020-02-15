@@ -1,0 +1,89 @@
+ABUBAKR= '''first
+righteous
+Caliph'''
+print (ABUBAKR)
+string= '''he said, "aren't, shouldn't, wouldn't"'''
+print (string)
+#embedding values in string
+score=1000
+msg='i score %s points'
+print (msg%score)
+age=50
+msg='i m %s years of age'
+print (msg%age)
+numbers=0,8
+msg='my numbers are %s and %s'
+print (msg%numbers)
+print ('a'*10)
+spaces = ' ' * 25
+print('%s 12 DHA Phase 5' % spaces)
+print('%s Clifton' % spaces)
+print('%s West Snoring' % spaces)
+print()
+print()
+print('Dear Sir')
+print()
+print('I wish to report that tiles are missing from the')
+print('outside toilet roof.')
+print('I think it was bad wind the other night that blew them away.')
+print()
+print('Regards')
+print('Sharfoo')
+list=['one',1,2,3,4]
+print (list[0:])
+#nested
+one=[1,2,3,4,5]
+two=[6,7,8,9,0]
+three=[one,two]
+print (three)
+#to add items to list we use .append
+megalist=['one', 'two', 'three', 'four', 'five']
+print (megalist)
+megalist.append ('six')
+print(megalist)
+del megalist [0]
+print (megalist)
+#multiplying list
+print (megalist*5)
+favorite_sports = ['Ali, Football', 'Omer, Basketball', 'Osman, Baseball','Abu Bkar, Netball', 'Fatima, Badminton', 'Faizan, Rugby']
+print (favorite_sports)
+favorite_sports = {'Ali' : 'Football','Omer' : 'Basketball','Osman' : 'Baseball','Abu Bakr' : 'Netball','Fatima' : 'Badminton','Faizan':'Rugby'}
+print (favorite_sports ['Omer'])
+del favorite_sports ['Ali']
+print (favorite_sports)
+#replace value
+favorite_sports ['Faizan']='cricket'
+print (favorite_sports)
+print (list [0:3])
+#loops
+for i in range (1,8):
+	print ('salam')
+for x in range (0,5):
+	print ('hi %s'%x)
+x = 0
+print('salam %s' % x)
+x = 1
+print('salam %s' % x)
+x = 2
+print('salam %s' % x)
+x = 3
+print('salam %s' % x)
+x = 4
+print('salam %s' % x)
+for i in megalist:
+	print ('hi')
+for i in megalist:
+	print('i')
+	print ('i')
+for j in megalist:
+	print ('rehab')
+x=80
+y=90
+while x<90 and y<100:
+	print ('ayesha')
+	x,y=x,y +1
+	x=x+1
+	y=y+2
+	print (x,y)
+for i in 'word':
+	print ('f')

@@ -1,0 +1,156 @@
+age=[i for i in range (5)]
+print (age)
+age=[i for i in 'word']
+print (age)
+#casting strings in to integers
+x=['1', '2', '3', '4', '5']
+y=[int(i) for i in x]
+print (y)
+#strip the list
+mystring= [s.strip for s in 'mystringlist']
+print (mystring)
+#nested list comprehensions
+list=[[1,2,3], [4,5,6], [7,8,9]]
+y=[num for elem in list for num in elem]
+print (y)
+#dictionary comprehensions
+dictionary= {i:str(i) for i in range (5)}
+print (dictionary)
+dict1={'name':'rehab', 'address':1234}
+y={value:key for key, value in dict1.items()}
+print (y)
+#set comprehensions
+list=[1,2,3,4,5,6,7,8,9,10]
+myset=set (list)
+print (myset)
+#errors
+dictionary={'a':1, 'b':2, 'c':3}
+try:
+	value=dictionary ['d']
+except KeyError:
+	print ('a')
+#list error msg
+list=[1,2,3,4]
+try:
+	list[5]
+except IndexError:
+	print ('rehab')
+#catching multiple exceptions
+dictionary1={'x':8, 'y':9, 'z':10}
+try:
+	value = dictionary1['e']
+except IndexError:
+	print ('lo')
+except KeyError:
+	print ('w')
+except:
+	print ('lanat')
+#example for finally
+try:
+	value= dictionary1['f']
+except KeyError:
+	print ('lele')
+finally:
+	print ('rose')
+try: 
+	value= dictionary1['x', 'y']
+except KeyError:
+	print ('shut')
+else:
+	print ('up')
+#tryingall
+try:
+	value= dictionary['x']
+except KeyError:
+	print ('hey')
+else:
+	print ('u doin')
+finally:
+	print ('what r')
+#assignment
+print ('Rehab will be ' + str(25 ) + ' in ' + str(2019))
+#using open to read files
+x= open (r'D:\presentation files\sneddon.pptx','r')
+print (x)
+print (r'D:\presentation files\sneddon.pptx')
+print ('D:\presentation files\sneddon.pptx')
+#seedata
+y= open(r'D:\Recovery.txt','r')
+for line in y:
+	print ('line')
+y.close
+data=y.read()
+print (data)
+y.close
+data=y.readline()
+print (data)
+y.close()
+#writing files in python
+#functions keyword argument
+def keyword_function (a=3, b=7):
+	return a+b
+
+keyword_function(b=8, a=9)
+#default argument keyword, or default argument
+def keyword_function (a=1, b=2):
+	return a+b
+keyword_function()
+#mixed functions
+def mixed_function (a, b=2, c=3):
+	return a+b+c
+mixed_function (1, b=4, c=5)
+mixed_function (1)
+#infinite arguments
+def many (*arg, **kwarg):
+	print (arg)
+	print (kwarg)
+many (name='rehab', job='cyberwarrior')
+#scope
+def function_a():
+	global a
+	a=1
+	b=2
+	return a+b
+def function_b():
+	c=3
+	return a+c
+print (function_a())
+print (function_b())
+#classes
+x='alnafi'
+dir (x)
+class vehicle (object):
+	'''docstring'''
+	def __init__(self, color, doors, tyres):
+		'''constructor'''
+		self.color=color
+		self.doors=doors
+		self.tyres=tyres
+
+	def brake (self):
+		'''
+		stop the car
+		'''
+		return 'braking'
+	def drive (self):
+		'''drive the car
+		'''
+		return "i'm driving!"
+
+class vehicle (object):
+	'''docstring'''
+	def __init__(self, color, doors, tyres):
+		'''constructor'''
+		pass
+
+
+
+
+
+
+
+
+
+
+
+

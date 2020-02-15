@@ -1,0 +1,143 @@
+def hello():
+	print ('a')
+	print ('b')
+	print ('c')
+hello()
+hello()
+hello()
+def hello(name):
+	print ('hello'+name)
+hello(' rehab')
+hello (' iftikhar')
+def my_name_is (name):
+	print ('my name is'+name)
+	print ('her name is'+ name)
+	print ('oh,how can i forget her name. her name is'+name)
+my_name_is (' shumaila')
+my_name_is (' saima')
+my_name_is (' rukhsana')
+#return statements and values
+import random
+def hi_there(name):
+	if name==1:
+		return 'once upon a time'
+	elif name==2:
+		return 'i was a kid'
+	elif name==3:
+		return 'then i got old'
+	elif name==4:
+		return 'this was the darkest phase in my life'
+	elif name==5:
+		return 'from that time, i m suffering every moment of life'
+print (hi_there(random.randint(1,5)))
+#alnafi return
+def variable_test ():
+		first_variable = 10
+		second_variable = 20
+		return first_variable * second_variable
+print(variable_test())
+another_variable = 100
+def variable_test2():
+	first_variable = 10
+	second_variable = 20
+	return first_variable * second_variable * another_variable
+print(variable_test2())
+#module
+import time
+print (time.asctime())
+#creating variables
+firstname = 'Mohammad'
+lastname = 'Omar'
+print (firstname, lastname)
+#keyword arguments and print
+print ('hello', end='')
+print (' world') 
+print ('cat', 'elephant', 'dog')
+print ('cat', 'elephant', 'dog', sep=',')
+#scope is like container for variables, these can be local and global scopes
+def spam():
+	eggs='hi'
+	print(eggs)
+def bacon():
+	horse='there'
+	spam ()
+	print (horse)
+cat='global'
+bacon()
+print(cat)
+#global variables can be read from local scopes
+def rehab ():
+	print (eggs)
+eggs=12
+rehab()
+print (eggs)
+#local scopes can not use variables in other local scopes
+def spam():
+	eggs = 99
+	bacon()
+	print(eggs)
+
+def bacon():
+	ham = 101
+	eggs = 0
+
+spam()
+#Local Variables Cannot Be Used in the Global Scope
+def spam():
+	eggs= 31337
+print(eggs)
+#The global Statement If you need to modify a global variable from within a function, use the global statement.
+def spam ():
+	global eggs
+	eggs='hi'
+eggs='bye'
+rehab ()
+print (eggs)
+#rules to find local and global variables
+def spam():
+	global eggs
+	eggs = 'spam' # this is the global
+
+def bacon():
+	eggs = 'bacon' # this is a local
+def ham():
+	print(eggs) # this is the global
+
+	eggs = 42 # this is the global
+	spam()
+	print(eggs)
+	#error handling
+	def spam (DividedBy):
+		return 42/DividedBy
+		
+	print (spam(2))#on python shell
+	print (spam(12))
+	print (spam(0))
+	print (spam(1))
+	
+def fahrenheit(celcius):
+	fahrenheit_1=celcius * 9/5+32
+	return fahrenheit_1
+print(fahrenheit (10))
+
+def string (howdoing):
+	string_1=howdoing
+	return  string_1
+print (len(string('rehab, ')))
+#or
+
+def rehab(hi):
+	h=float(hi)+54
+	return h
+hi= input('hi there: ')
+if hi<200:
+	print('bye')
+else:
+	print('hehe')
+
+def string_length(mystring):
+    if type(mystring) == int:
+         return "Sorry, integers don't have length"
+    else:
+         return len(mystring)
+
